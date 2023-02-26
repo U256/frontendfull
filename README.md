@@ -1,4 +1,9 @@
 # Frontendfull
 
-Frontend technologues combined in one monorepo
+Frontend technologies combined in one monorepo
+
+- Monorepo
+- Shared server (express)
+- Docker wrapped
+
 
