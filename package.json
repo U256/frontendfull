@@ -1,0 +1,27 @@
+{
+  "name": "frontendfull",
+  "version": "0.1.0",
+  "author": "Alexey Chernavcev <chernavcev.av@gmail.com> (https://github.com/U256/)",
+  "private": true,
+  "packageManager": "yarn@3.4.1",
+  "license": "MIT",
+  "workspaces": [
+    "packages/*",
+    "shared/*"
+  ],
+  "scripts": {
+    "deps": "yarn workspaces run deps",
+    "build": "yarn workspaces run build",
+    "start": "concurrently \"wsrun --parallel start\"",
+    "clean": "rm -fr node_modules sites/**/node_modules && yarn run clean:dist",
+    "clean:dist": "rm -fr node_modules sites/**/dist"
+  },
+  "engines": {
+    "node": "19.7.0",
+    "yarn": "3.4.1"
+  },
+  "dependencies": {
+    "concurrently": "^7.6.0",
+    "wsrun": "^5.2.4"
+  }
+}
