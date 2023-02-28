@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "author": "Alexey Chernavcev <chernavcev.av@gmail.com> (https://github.com/U256/)",
   "private": true,
-  "packageManager": "yarn@3.4.1",
   "license": "MIT",
   "workspaces": [
     "packages/*",
@@ -18,7 +17,7 @@
   },
   "engines": {
     "node": "19.7.0",
-    "yarn": "3.4.1"
+    "yarn": "1.22.18"
   },
   "dependencies": {
     "concurrently": "^7.6.0",
