@@ -21,7 +21,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       },\
       {\
         "name": "server",\
-        "reference": "workspace:packages/server"\
+        "reference": "workspace:shared/server"\
       }\
     ],\
     "enableTopLevelFallback": true,\
@@ -29,7 +29,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
     "fallbackExclusionList": [\
       ["frontendfull", ["workspace:."]],\
       ["next-js", ["workspace:packages/next-js"]],\
-      ["server", ["workspace:packages/server"]]\
+      ["server", ["workspace:shared/server"]]\
     ],\
     "fallbackPool": [\
     ],\
@@ -3815,10 +3815,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["server", [\
-        ["workspace:packages/server", {\
-          "packageLocation": "./packages/server/",\
+        ["workspace:shared/server", {\
+          "packageLocation": "./shared/server/",\
           "packageDependencies": [\
-            ["server", "workspace:packages/server"],\
+            ["server", "workspace:shared/server"],\
             ["express", "npm:4.18.2"]\
           ],\
           "linkType": "SOFT"\

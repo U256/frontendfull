@@ -11,8 +11,8 @@
   ],
   "scripts": {
     "deps": "yarn workspaces run deps",
-    "build": "yarn workspaces run build",
-    "start": "concurrently \"wsrun --parallel start\"",
+    "build": "yarn workspaces run build --kill-others",
+    "start": "conc \"wsrun --parallel start\"",
     "clean": "rm -fr node_modules sites/**/node_modules && yarn run clean:dist",
     "clean:dist": "rm -fr node_modules sites/**/dist"
   },
