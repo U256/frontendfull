@@ -10,9 +10,12 @@
   ],
   "scripts": {
     "build": "yarn workspaces run build",
-    "start": "conc \"wsrun --parallel start\"",
+		"dev": "conc \"wsrun --parallel dev\"",
     "clean": "rm -fr node_modules sites/**/node_modules && yarn run clean:dist",
-    "clean:dist": "rm -fr node_modules sites/**/dist"
+    "clean:dist": "rm -fr node_modules sites/**/dist",
+		"server": "cd shared/server && yarn dev",
+		"nextjs": "cd packages/next-js && yarn dev",
+		"start-next": "conc \"yarn server\" \"yarn nextjs\""
   },
   "engines": {
     "node": "19.7.0",
