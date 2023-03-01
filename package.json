@@ -9,8 +9,7 @@
     "shared/*"
   ],
   "scripts": {
-    "deps": "yarn workspaces run deps",
-    "build": "yarn workspaces run build --kill-others",
+    "build": "yarn workspaces run build",
     "start": "conc \"wsrun --parallel start\"",
     "clean": "rm -fr node_modules sites/**/node_modules && yarn run clean:dist",
     "clean:dist": "rm -fr node_modules sites/**/dist"
