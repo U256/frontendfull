@@ -14,7 +14,8 @@
 		"dev-server": "yarn --cwd shared/server dev",
 		"dev-client": "yarn --cwd packages/$CLIENT dev",
 		"next-js": "CLIENT=next-js yarn dev-client",
-		"start-next": "conc \"yarn server\" \"yarn next-js\" --kill-others-on-fail --restart-tries 1"
+		"start-next": "conc \"yarn server\" \"yarn next-js\" --kill-others-on-fail --restart-tries 1",
+		"prettify": "prettier --write ."
 	},
 	"engines": {
 		"node": "19.7.0",
@@ -22,5 +23,8 @@
 	},
 	"dependencies": {
 		"concurrently": "^7.6.0"
+	},
+	"devDependencies": {
+		"prettier": "^2.8.4"
 	}
 }
