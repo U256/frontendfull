@@ -21,7 +21,6 @@
 		"yarn": "1.22.18"
 	},
 	"dependencies": {
-		"concurrently": "^7.6.0",
-		"wsrun": "^5.2.4"
+		"concurrently": "^7.6.0"
 	}
 }
