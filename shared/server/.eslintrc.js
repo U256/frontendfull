@@ -1,5 +1,5 @@
 /** @type {import('@typescript-eslint/experimental-utils').TSESLint.Linter.Config} */
-module.exports = {
+const config = {
 	env: {
 		browser: false,
 		node: true,
@@ -10,7 +10,7 @@ module.exports = {
 		'plugin:@typescript-eslint/recommended',
 		'eslint-config-airbnb',
 	],
-	parser: "@typescript-eslint/parser",
+	parser: '@typescript-eslint/parser',
 	parserOptions: {
 		ecmaVersion: 2021,
 		sourceType: 'module',
@@ -24,3 +24,5 @@ module.exports = {
 		'no-tabs': 0,
 	},
 }
+
+module.exports = config
