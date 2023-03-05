@@ -26,8 +26,7 @@ const config = {
 	parserOptions: {
 		project: 'tsconfig.json',
 		tsconfigRootDir: __dirname,
-		sourceType: 'module'
-
+		sourceType: 'module',
 	},
 	plugins: ['react', '@typescript-eslint', 'react-hooks', 'jsx-a11y', 'import'],
 	settings: {
@@ -47,6 +46,8 @@ const config = {
 		semi: ['error', 'never'],
 		'no-tabs': 0,
 		'arrow-body-style': 0,
+		'object-curly-newline': 0,
+		'max-len': ['error', { code: 100, ignoreUrls: true }],
 		'linebreak-style': ['error', 'unix'],
 		'react/react-in-jsx-scope': 0,
 		'react/function-component-definition': 0,
@@ -55,7 +56,7 @@ const config = {
 		'react/jsx-indent': 0,
 		'@typescript-eslint/semi': ['error', 'never'],
 		'@typescript-eslint/indent': 0,
-		'@next/next/no-html-link-for-pages': 0
+		'@next/next/no-html-link-for-pages': 0,
 	},
 }
 
