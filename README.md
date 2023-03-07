@@ -6,7 +6,7 @@ Frontend technologies combined in one monorepo
 - Shared server (express)
 - Docker wrapped
 
-Results of research placed here
+Results of research is here:
 https://docs.google.com/spreadsheets/d/1AYHbKKr7670Jtgaoagc9ubcO9DMTfaM4jmIIF4JkOw0/edit#gid=0
 
 
