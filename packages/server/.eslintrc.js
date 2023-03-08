@@ -5,7 +5,11 @@ const config = {
 		node: true,
 		es2021: true,
 	},
-	extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended', 'eslint-config-airbnb'],
+	extends: [
+		'eslint:recommended',
+		'plugin:@typescript-eslint/recommended',
+		'eslint-config-airbnb',
+	],
 	parser: '@typescript-eslint/parser',
 	parserOptions: {
 		ecmaVersion: 2021,

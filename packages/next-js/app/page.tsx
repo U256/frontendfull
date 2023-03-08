@@ -18,8 +18,7 @@ export default function Home() {
 						target="_blank"
 						rel="noopener noreferrer"
 					>
-						By
-						{' '}
+						By{' '}
 						<Image
 							src="/vercel.svg"
 							alt="Vercel Logo"
@@ -54,7 +53,8 @@ export default function Home() {
 					rel="noopener noreferrer"
 				>
 					<h2 className={inter.className}>
-						Docs <span>-&gt;</span>
+						Docs
+						<span>-&gt;</span>
 					</h2>
 					<p className={inter.className}>
 						Find in-depth information about Next.js features and API.
@@ -68,7 +68,8 @@ export default function Home() {
 					rel="noopener noreferrer"
 				>
 					<h2 className={inter.className}>
-						Templates <span>-&gt;</span>
+						Templates
+						<span>-&gt;</span>
 					</h2>
 					<p className={inter.className}>Explore the Next.js 13 playground.</p>
 				</a>
@@ -80,7 +81,8 @@ export default function Home() {
 					rel="noopener noreferrer"
 				>
 					<h2 className={inter.className}>
-						Deploy <span>-&gt;</span>
+						Deploy
+						<span>-&gt;</span>
 					</h2>
 					<p className={inter.className}>
 						Instantly deploy your Next.js site to a shareable URL with Vercel.
