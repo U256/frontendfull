@@ -1,0 +1,10 @@
+{
+	"name": "@frontendfull/prettier-config-shared",
+	"description": "Shared Prettier configuration",
+	"version": "0.1.0",
+	"license": "ISC",
+	"main": "index.js",
+	"peerDependencies": {
+		"prettier": ">=  2.8.4"
+	}
+}
