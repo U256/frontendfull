@@ -18,8 +18,7 @@ export default function Home() {
 						target="_blank"
 						rel="noopener noreferrer"
 					>
-						By
-						{' '}
+						By{' '}
 						<Image
 							src="/vercel.svg"
 							alt="Vercel Logo"
@@ -31,6 +30,17 @@ export default function Home() {
 					</a>
 				</div>
 			</div>
+
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit veritatis enim esse est
+				delectus voluptas vero, dolorum temporibus earum ut ipsum ullam hic quod nostrum sunt
+				officia, excepturi libero quasi facilis. Sapiente at illo fugiat corrupti laborum dolore rem
+				saepe iste aliquam hic nulla consequatur, aut doloremque nam cumque sequi perferendis ullam
+				praesentium? Iure perspiciatis doloribus soluta facilis voluptas sint quasi culpa sit fugit
+				esse? Dignissimos commodi fuga ea aut, placeat rem, sit nam quas mollitia libero aliquid!
+				Corporis harum quasi qui vel aliquam dolor accusamus unde numquam exercitationem doloremque
+				quos non, cumque cupiditate facilis quae aliquid, ullam consectetur fuga?
+			</p>
 
 			<div className={styles.center}>
 				<Image
@@ -54,7 +64,8 @@ export default function Home() {
 					rel="noopener noreferrer"
 				>
 					<h2 className={inter.className}>
-						Docs <span>-&gt;</span>
+						Docs
+						<span>-&gt;</span>
 					</h2>
 					<p className={inter.className}>
 						Find in-depth information about Next.js features and API.
@@ -68,7 +79,8 @@ export default function Home() {
 					rel="noopener noreferrer"
 				>
 					<h2 className={inter.className}>
-						Templates <span>-&gt;</span>
+						Templates
+						<span>-&gt;</span>
 					</h2>
 					<p className={inter.className}>Explore the Next.js 13 playground.</p>
 				</a>
@@ -80,7 +92,8 @@ export default function Home() {
 					rel="noopener noreferrer"
 				>
 					<h2 className={inter.className}>
-						Deploy <span>-&gt;</span>
+						Deploy
+						<span>-&gt;</span>
 					</h2>
 					<p className={inter.className}>
 						Instantly deploy your Next.js site to a shareable URL with Vercel.

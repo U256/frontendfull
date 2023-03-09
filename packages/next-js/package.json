@@ -6,8 +6,10 @@
 		"dev": "next dev",
 		"build": "next build",
 		"start": "next start",
-		"lint": "next lint",
-		"lint-es": "eslint --fix \"./**/*.{js,jsx,ts,tsx,vue}\""
+		"lint-next": "next lint",
+		"lint-es": "eslint --fix \"./**/*.{js,jsx,ts,tsx}\"",
+		"prettify": "prettier --write .",
+		"lint": "yarn lint-next && yarn prettify && yarn lint-es"
 	},
 	"dependencies": {
 		"next": "13.2.1",
@@ -15,6 +17,8 @@
 		"react-dom": "18.2.0"
 	},
 	"devDependencies": {
+		"@frontendfull/eslint-config-shared": "0.1.0",
+		"@frontendfull/prettier-config-shared": "0.1.0",
 		"@types/eslint": "^8.21.1",
 		"@types/node": "18.14.1",
 		"@types/react": "18.0.28",
@@ -25,11 +29,14 @@
 		"eslint-config-airbnb": "^19.0.4",
 		"eslint-config-airbnb-typescript": "^17.0.0",
 		"eslint-config-next": "13.2.1",
+		"eslint-config-prettier": "^8.7.0",
 		"eslint-import-resolver-typescript": "^3.5.3",
 		"eslint-plugin-import": "^2.27.5",
 		"eslint-plugin-jsx-a11y": "^6.7.1",
+		"eslint-plugin-prettier": "^4.2.1",
 		"eslint-plugin-react": "^7.32.2",
 		"eslint-plugin-react-hooks": "^4.6.0",
+		"prettier": "^2.8.4",
 		"typescript": "^4.9.5"
 	}
 }
