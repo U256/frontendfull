@@ -1,27 +1,20 @@
-/** @type {import('@typescript-eslint/experimental-utils').TSESLint.Linter.Config} */
 const config = {
 	env: {
 		browser: false,
 		node: true,
 		es2021: true,
 	},
-	extends: [
-		'eslint:recommended',
-		'plugin:@typescript-eslint/recommended',
-		'eslint-config-airbnb',
-	],
-	parser: '@typescript-eslint/parser',
+	extends: ['@frontendfull/eslint-config-shared'],
 	parserOptions: {
 		ecmaVersion: 2021,
+		parser: '@typescript-eslint/parser',
+		project: 'tsconfig.json',
+		tsconfigRootDir: __dirname,
 		sourceType: 'module',
 	},
-	plugins: ['@typescript-eslint'],
+	plugins: [],
 	rules: {
-		indent: ['error', 'tab'],
-		'linebreak-style': ['error', 'unix'],
-		quotes: ['error', 'single'],
-		semi: ['error', 'never'],
-		'no-tabs': 0,
+		//
 	},
 }
 

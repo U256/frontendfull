@@ -14,6 +14,7 @@ const config = {
 	overrides: [],
 	parser: '@typescript-eslint/parser',
 	parserOptions: {
+		ecmaVersion: 2021,
 		project: 'tsconfig.json',
 		tsconfigRootDir: __dirname,
 		sourceType: 'module',

@@ -10,6 +10,7 @@
 	],
 	"scripts": {
 		"build": "yarn workspaces run build",
+		"lint": "yarn workspaces run lint",
 		"clean": "rm -fr node_modules /**/node_modules && yarn run clean:dist",
 		"dev-server": "yarn --cwd shared/server dev",
 		"dev-client": "yarn --cwd packages/$CLIENT dev",
@@ -19,9 +20,6 @@
 	"engines": {
 		"node": "19.7.0",
 		"yarn": "1.22.18"
-	},
-	"dependencies": {
-		"concurrently": "^7.6.0"
 	},
 	"devDependencies": {
 		"concurrently": "^7.6.0",
