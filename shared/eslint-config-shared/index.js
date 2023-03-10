@@ -32,7 +32,8 @@ module.exports = {
 		'linebreak-style': ['error', 'unix'],
 		'import/prefer-default-export': 0,
 		'@typescript-eslint/indent': 0,
-		"prettier/prettier": ["error"],
-		// "max-lines-per-function": ['error', { max: 25, skipComments: true, 'IIFEs': true, skipBlankLines: true }],
+		'prettier/prettier': ['error'],
+		'no-underscore-dangle': 0,
+		// 'max-lines-per-function': ['error', { max: 25, skipComments: true, 'IIFEs': true, skipBlankLines: true }],
 	},
 }
