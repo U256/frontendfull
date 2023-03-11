@@ -7,9 +7,9 @@ const config = {
 	},
 	ignorePatterns: ['.next'],
 	extends: [
-		'@frontendfull/eslint-config-shared',
 		'plugin:react/recommended',
 		'next/core-web-vitals',
+		'@frontendfull/eslint-config-shared',
 	],
 	overrides: [],
 	parser: '@typescript-eslint/parser',
