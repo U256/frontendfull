@@ -1,3 +1,4 @@
+
 module.exports = {
 	// eslint disabled for this file
 	// more info:
@@ -17,6 +18,7 @@ module.exports = {
 		'airbnb',
 		'airbnb-typescript',
 		'prettier',
+		'unused-imports'
 	],
 	parser: '@typescript-eslint/parser',
 	parserOptions: {
@@ -24,7 +26,7 @@ module.exports = {
 		tsconfigRootDir: __dirname,
 		sourceType: 'module',
 	},
-	plugins: ['react', '@typescript-eslint', 'react-hooks', 'jsx-a11y', 'import', 'prettier'],
+	plugins: ['react', '@typescript-eslint', 'react-hooks', 'jsx-a11y', 'import', 'prettier', 'unused-imports'],
 	rules: {
 		'arrow-body-style': 0,
 		'object-curly-newline': 0,
@@ -35,5 +37,14 @@ module.exports = {
 		'prettier/prettier': ['error'],
 		'no-underscore-dangle': 0,
 		// 'max-lines-per-function': ['error', { max: 25, skipComments: true, 'IIFEs': true, skipBlankLines: true }],
+		
+		// unused imports autoremove:
+		'no-unused-vars': 'off',
+		'@typescript-eslint/no-unused-vars': 'off',
+		'unused-imports/no-unused-imports': 'warn',
+		'unused-imports/no-unused-vars': [
+			'warn',
+			{ vars: 'all', varsIgnorePattern: '^_', args: 'after-used', argsIgnorePattern: '^_' },
+		],
 	},
 }
