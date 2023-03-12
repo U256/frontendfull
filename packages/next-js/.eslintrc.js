@@ -1,8 +1,8 @@
-const config = {
+module.exports = {
 	env: {
 		browser: true,
 		node: true,
-		es2021: true,
+		es2020: true,
 		'shared-node-browser': true,
 	},
 	ignorePatterns: ['.next'],
@@ -14,8 +14,11 @@ const config = {
 	overrides: [],
 	parser: '@typescript-eslint/parser',
 	parserOptions: {
-		ecmaVersion: 2021,
-		project: 'tsconfig.json',
+	 ecmaFeatures: {
+			jsx: true,
+		},
+		ecmaVersion: 2020, // redundant, sets automatically by env.es2020 
+		project: './tsconfig.json',
 		tsconfigRootDir: __dirname,
 		sourceType: 'module',
 	},
@@ -27,12 +30,6 @@ const config = {
 		next: {
 			rootDir: __dirname,
 		},
-		'import/resolver': {
-			typescript: {}, // TODO: ????
-		},
-		// 'import/parsers': {
-		// 	'@typescript-eslint/parser': ['.ts', '.tsx'],
-		// },
 	},
 	rules: {
 		'react/react-in-jsx-scope': 0,
@@ -63,5 +60,3 @@ const config = {
 		],
 	},
 }
-
-module.exports = config
