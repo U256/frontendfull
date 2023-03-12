@@ -8,29 +8,10 @@ module.exports = {
 	extends: [
 		'eslint:recommended',
 		'plugin:import/recommended',
-		'plugin:import/typescript',
-		'plugin:@typescript-eslint/recommended',
-		'plugin:@typescript-eslint/recommended-requiring-type-checking', // just to try TODO: remove if useless
-		'plugin:@typescript-eslint/strict', // just to try
 		'airbnb',
-		'airbnb-typescript',
 		'prettier',
 	],
-	parser: '@typescript-eslint/parser',
-	parserOptions: {
-		project: 'tsconfig.json',
-		tsconfigRootDir: __dirname,
-		sourceType: 'module',
-	},
-	plugins: [
-		'react',
-		'@typescript-eslint',
-		'react-hooks',
-		'jsx-a11y',
-		'import',
-		'prettier',
-		'unused-imports',
-	],
+	plugins: ['import', 'prettier', 'unused-imports'],
 	rules: {
 		'arrow-body-style': 0,
 		'object-curly-newline': 0,
@@ -43,7 +24,7 @@ module.exports = {
 		],
 		'max-lines': [
 			'error',
-			{ max: 150,  skipComments: true, skipBlankLines: true }
+			{ max: 150, skipComments: true, skipBlankLines: true },
 		],
 		'import/prefer-default-export': 0,
 		'prettier/prettier': ['error'],
@@ -71,22 +52,11 @@ module.exports = {
 		{
 			files: ['*.ts', '*.tsx'],
 			parser: '@typescript-eslint/parser',
+			// write this overriding option in your project to specify exact tsconfigRootDir:
 			parserOptions: {
 				project: './tsconfig.json',
-				tsconfigRootDir: __dirname,
-				sourceType: 'module',
-			},
-			settings: {
-				'import/parsers': {
-					'@typescript-eslint/parser': ['.ts', '.tsx']
-				},
-				'import/resolver': {
-					typescript: {
-						alwaysTryTypes: true,
-						project: './tsconfig.json',
-						
-					},
-				},
+			// 	tsconfigRootDir: __dirname,
+			// 	sourceType: 'module',
 			},
 			extends: [
 				'eslint:recommended',

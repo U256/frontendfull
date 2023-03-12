@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
-import styles from 'app/page.module.css'
+import styles from '/page.module.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -34,17 +34,6 @@ export default function Home() {
 					</a>
 				</div>
 			</div>
-
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit veritatis enim esse est
-				delectus voluptas vero, dolorum temporibus earum ut ipsum ullam hic quod nostrum sunt
-				officia, excepturi libero quasi facilis. Sapiente at illo fugiat corrupti laborum dolore rem
-				saepe iste aliquam hic nulla consequatur, aut doloremque nam cumque sequi perferendis ullam
-				praesentium? Iure perspiciatis doloribus soluta facilis voluptas sint quasi culpa sit fugit
-				esse? Dignissimos commodi fuga ea aut, placeat rem, sit nam quas mollitia libero aliquid!
-				Corporis harum quasi qui vel aliquam dolor accusamus unde numquam exercitationem doloremque
-				quos non, cumque cupiditate facilis quae aliquid, ullam consectetur fuga?
-			</p>
 
 			<div className={styles.center}>
 				<Image

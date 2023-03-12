@@ -11,18 +11,7 @@ module.exports = {
 		'next/core-web-vitals',
 		'@frontendfull/eslint-config-shared',
 	],
-	overrides: [],
-	parser: '@typescript-eslint/parser',
-	parserOptions: {
-	 ecmaFeatures: {
-			jsx: true,
-		},
-		ecmaVersion: 2020, // redundant, sets automatically by env.es2020 
-		project: './tsconfig.json',
-		tsconfigRootDir: __dirname,
-		sourceType: 'module',
-	},
-	plugins: ['react', '@typescript-eslint', 'react-hooks', 'jsx-a11y', 'import'],
+	plugins: ['react', 'react-hooks', 'jsx-a11y', 'prettier', 'unused-imports'],
 	settings: {
 		react: {
 			version: 'detect',
@@ -36,6 +25,7 @@ module.exports = {
 		'react/function-component-definition': 0,
 		'react/jsx-indent-props': [2, 'tab'],
 		'react/jsx-indent': 0,
+		'react/jsx-key': 'error',
 		'@next/next/no-html-link-for-pages': 0,
 		'import/order': [
 			'warn',
@@ -59,4 +49,38 @@ module.exports = {
 			},
 		],
 	},
+	overrides: [
+		{
+			files: ['ts', 'tsx'],
+			parser: '@typescript-eslint/parser',
+			parserOptions: {
+				project: 'tsconfig.json',
+				tsconfigRootDir: __dirname,
+				sourceType: 'module',
+			},
+			extends: [
+				'eslint:recommended',
+				'plugin:import/recommended',
+				'plugin:import/typescript',
+				'plugin:@typescript-eslint/recommended',
+				'plugin:@typescript-eslint/recommended-requiring-type-checking', // just to try
+				'plugin:@typescript-eslint/strict', // just to try
+				'airbnb-typescript',
+				'prettier',
+			],
+			plugins: [
+				'@typescript-eslint',
+				'react',
+				'react-hooks',
+				'jsx-a11y',
+				'prettier',
+				'unused-imports',
+			],
+			rules: {
+				'@typescript-eslint/indent': 0,
+				'@typescript-eslint/naming-convention': 'warn',
+				'@typescript-eslint/no-unused-vars': 'off',
+			},
+		},
+	],
 }
