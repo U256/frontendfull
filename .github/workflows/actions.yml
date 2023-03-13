@@ -5,20 +5,35 @@ on:
   pull_request:
     branches: [ main ]
 jobs:
-  Code-quality:
+  lint:
     runs-on: ubuntu-latest
     strategy:
       matrix:
         node-version: [ 19.x ]
     steps:
-      - uses: actions/checkout@v.3
-      - name: Starting Node.js ${{}}
+      - name: Get repository code
+        uses: actions/checkout@v3
+      - name: Starting Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-      - name: install modules
-        run: yarn intall
-      - name: build
-        run: yarn build
-      - name: lint
+      - name: Install modules
+        run: yarn intall --frozen-lockfile
+      - name: Lint
         run: yarn lint
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [ 19.x ]
+    steps:
+      - name: Get repository code
+        uses: actions/checkout@v3
+      - name: Starting Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Install modules
+        run: yarn intall --frozen-lockfile
+      - name: Build
+        run: yarn build
