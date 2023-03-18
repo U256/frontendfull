@@ -15,7 +15,8 @@
 		"dev-server": "yarn --cwd shared/server dev",
 		"dev-client": "yarn --cwd packages/$CLIENT dev",
 		"next-js": "CLIENT=next-js yarn dev-client",
-		"start-next": "conc \"yarn server\" \"yarn next-js\" --kill-others-on-fail --restart-tries 1"
+		"start-next": "conc \"yarn server\" \"yarn next-js\" --kill-others-on-fail --restart-tries 1",
+		"setup-vscode": "mkdir ./.vscode && touch ./.vscode/settings.json && cp ./base-vscode-settings.json ./.vscode/settings.json"
 	},
 	"engines": {
 		"node": "19.7.0",
