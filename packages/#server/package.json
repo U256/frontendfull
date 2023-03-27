@@ -3,7 +3,7 @@
 	"version": "0.1.0",
 	"scripts": {
 		"dev": "node app.js",
-		"build": "server: no build required",
+		"build": "echo no build required",
 		"lint-es": "eslint --fix ./",
 		"prettify": "prettier --write .",
 		"lint": "yarn prettify && yarn lint-es"

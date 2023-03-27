@@ -1,9 +1,10 @@
 name: Monorepo actions
 on:
+  workflow_dispatch:
   push:
-    branches: [ main ]
+      branches: [ main ]
   pull_request:
-    branches: [ main ]
+    types: [ opened, edited, reopened ]
 jobs:
   lint:
     runs-on: ubuntu-latest
