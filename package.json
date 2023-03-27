@@ -19,8 +19,8 @@
 		"setup-vscode": "mkdir ./.vscode && touch ./.vscode/settings.json && cp ./base-vscode-settings.json ./.vscode/settings.json"
 	},
 	"engines": {
-		"node": "19.7.0",
-		"yarn": "1.22.18"
+		"node": "^19.7.0",
+		"yarn": "^1.22.18"
 	},
 	"devDependencies": {
 		"concurrently": "^7.6.0",
