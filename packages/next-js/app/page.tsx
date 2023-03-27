@@ -8,10 +8,6 @@ export default function Home() {
 	return (
 		<main className={styles.main}>
 			<div className={styles.description}>
-				{[1, 2, 3].map((item) => (
-					<p>{item}</p>
-				))}
-				<button>text</button>
 				<p>
 					Get started by editing&nbsp;
 					<code className={styles.code}>app/page.tsx</code>
