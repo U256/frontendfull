@@ -23,6 +23,7 @@ jobs:
       - name: Lint
         run: yarn lint
   build:
+    needs: lint
     runs-on: ubuntu-latest
     strategy:
       matrix:
