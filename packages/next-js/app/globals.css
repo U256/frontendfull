@@ -1,7 +1,7 @@
 :root {
 	--max-width: 1100px;
 	--border-radius: 12px;
-	--font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono', 'Roboto Mono',
+	--font-mono: ui-monospace, menlo, monaco, 'Cascadia Mono', 'Segoe UI Mono', 'Roboto Mono',
 		'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro', 'Fira Mono', 'Droid Sans Mono',
 		'Courier New', monospace;
 	--foreground-rgb: 0, 0, 0;
@@ -15,8 +15,7 @@
 		#0071ff33 160deg,
 		transparent 360deg
 	);
-	--secondary-glow: radial-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
-
+	--secondary-glow: radial-gradient(rgb(255 255 255 / 100%), rgb(255 255 255 / 0%));
 	--tile-start-rgb: 239, 245, 249;
 	--tile-end-rgb: 228, 232, 233;
 	--tile-border: conic-gradient(
