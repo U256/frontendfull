@@ -10,8 +10,7 @@
 		"lint-es": "eslint --fix \"./**/*.{js,jsx,ts,tsx}\"",
 		"lint-style": "stylelint --fix \"./**/*.{css,scss}\"",
 		"prettify": "prettier --write .",
-		"lint-real": "yarn lint-next && yarn lint-style && yarn prettify && yarn lint-es",
-		"lint": "exit 0"
+		"lint": "yarn lint-next && yarn lint-style && yarn prettify && yarn lint-es"
 	},
 	"dependencies": {
 		"next": "13.2.1",
