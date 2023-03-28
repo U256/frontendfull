@@ -1,5 +1,5 @@
 {
-	"name": "frontendfull/eslint-config-shared",
+	"name": "@frontendfull/eslint-config-shared",
 	"description": "Shared ESLint configuration",
 	"version": "0.1.0",
 	"license": "ISC",
