@@ -14,7 +14,7 @@ const config = {
 	},
 	plugins: [],
 	rules: {
-		//
+		'react/jsx-filename-extension': 0,
 	},
 }
 
