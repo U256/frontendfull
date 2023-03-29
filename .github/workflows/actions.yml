@@ -1,16 +1,11 @@
 name: Monorepo actions
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
-    types: [ opened, edited, reopened ]
+on: [push, workflow_dispatch]
 jobs:
-  lint:
+  build-and-lint:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [ 19.x ]
+        node-version: [19.x]
     steps:
       - name: Get repository code
         uses: actions/checkout@v3
@@ -18,23 +13,34 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-      - name: Install modules
-        run: yarn --frozen-lockfile
-      - name: Lint
-        run: yarn lint
-  build:
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [ 19.x ]
-    steps:
-      - name: Get repository code
-        uses: actions/checkout@v3
-      - name: Starting Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
+      - name: Cache deps
+        uses: actions/cache@v3
         with:
-          node-version: ${{ matrix.node-version }}
+          path: ~/.npm
+          key: node-modules-${{ hashFiles('**/package-lock.json') }}
       - name: Install modules
         run: yarn --frozen-lockfile
       - name: Build
         run: yarn build
+      - name: Lint
+        run: yarn lint
+  # lint:
+  #   needs: build
+  #   runs-on: ubuntu-latest
+  #   strategy:
+  #     matrix:
+  #       node-version: [19.x]
+  #   steps:
+  #     - name: Get repository code
+  #       uses: actions/checkout@v3
+  #     - name: Starting Node.js ${{ matrix.node-version }}
+  #       uses: actions/setup-node@v3
+  #       with:
+  #         node-version: ${{ matrix.node-version }}
+  #     - name: Cache deps
+  #       uses: actions/cache@v3
+  #       with:
+  #         path: ~/.npm
+  #         key: node-modules-${{ hashFiles('**/package-lock.json') }}
+  #     - name: Install modules
+  #       run: yarn --frozen-lockfile
