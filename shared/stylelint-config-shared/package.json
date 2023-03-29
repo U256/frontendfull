@@ -4,10 +4,6 @@
 	"version": "0.1.0",
 	"private": true,
 	"license": "ISC",
-	"scripts": {
-		"build": "echo no build required",
-		"lint": "echo no lint required"
-	},
 	"main": "index.js",
 	"peerDependencies": {
 		"postcss": "^8.4.21",
