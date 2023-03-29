@@ -49,10 +49,5 @@
 		"stylelint-prettier": "^3.0.0",
 		"stylelint-scss": "^4.5.0",
 		"typescript": "^4.9.5"
-	},
-	"resolutions": {
-		"@frontendfull/eslint-config-shared": "portal:../../shared/eslint-config-shared",
-		"@frontendfull/prettier-config-shared": "portal:../../shared/prettier-config-shared",
-		"@frontendfull/stylelint-config-shared": "portal:../../shared/stylelint-config-shared"
 	}
 }
