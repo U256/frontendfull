@@ -1,3 +1,3 @@
-const cfg = require('@frontendfull/stylilint-config-shared')
+const cfg = require('@frontendfull/stylelint-config-shared')
 
 module.exports = cfg
