@@ -10,15 +10,14 @@
 	],
 	"scripts": {
 		"clear": "npm exec --workspaces -- npx rimraf node_modules && npx rimraf node_modules",
-		"install-all": "yarn workspaces foreach run install",
+		"setup-vscode": "mkdir ./.vscode && touch ./.vscode/settings.json && cp ./base-vscode-settings.json ./.vscode/settings.json",
 		"build": "yarn workspaces foreach -p run build",
 		"lint": "yarn workspaces foreach run lint",
 		"clean": "rm -fr node_modules /**/node_modules && yarn run clean:dist",
 		"dev-server": "yarn --cwd shared/server dev",
 		"dev-client": "yarn --cwd packages/$CLIENT dev",
 		"next-js": "CLIENT=next-js yarn dev-client",
-		"start-next": "conc \"yarn server\" \"yarn next-js\" --kill-others-on-fail --restart-tries 1",
-		"setup-vscode": "mkdir ./.vscode && touch ./.vscode/settings.json && cp ./base-vscode-settings.json ./.vscode/settings.json"
+		"start-next": "conc \"yarn server\" \"yarn next-js\" --kill-others-on-fail --restart-tries 1"
 	},
 	"engines": {
 		"node": "^19.7.0",
