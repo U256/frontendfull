@@ -8,7 +8,7 @@ module.exports = {
 	extends: [
 		'eslint:recommended',
 		'plugin:import/recommended',
-		'airbnb',
+		'airbnb-base',
 		'prettier',
 	],
 	plugins: ['import', 'prettier', 'unused-imports'],

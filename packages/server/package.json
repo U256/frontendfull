@@ -12,13 +12,11 @@
 		"express": "^4.18.2"
 	},
 	"devDependencies": {
-		"@frontendfull/eslint-config-shared": "0.1.0",
-		"@frontendfull/prettier-config-shared": "0.1.0",
 		"@types/express": "^4.17.17",
 		"@typescript-eslint/eslint-plugin": "^5.54.0",
 		"@typescript-eslint/parser": "^5.54.0",
 		"eslint": "^8.35.0",
-		"eslint-config-airbnb": "^19.0.4",
+		"eslint-config-airbnb-base": "^15.0.0",
 		"eslint-config-airbnb-typescript": "^17.0.0",
 		"eslint-import-resolver-typescript": "^3.5.3",
 		"eslint-plugin-import": "^2.27.5",
@@ -26,5 +24,9 @@
 		"eslint-plugin-unused-imports": "^2.0.0",
 		"prettier": "^2.8.4",
 		"typescript": "^4.9.5"
+	},
+	"resolutions": {
+		"@frontendfull/eslint-config-shared": "portal:../../shared/eslint-config-shared",
+		"@frontendfull/prettier-config-shared": "portal:../../shared/prettier-config-shared"
 	}
 }

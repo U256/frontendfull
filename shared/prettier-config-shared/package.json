@@ -2,6 +2,7 @@
 	"name": "@frontendfull/prettier-config-shared",
 	"description": "Shared Prettier configuration",
 	"version": "0.1.0",
+	"private": true,
 	"license": "ISC",
 	"scripts": {
 		"build": "echo no build required",
@@ -9,6 +10,6 @@
 	},
 	"main": "index.js",
 	"peerDependencies": {
-		"prettier": ">=  2.8.4"
+		"prettier": "^2.8.4"
 	}
 }

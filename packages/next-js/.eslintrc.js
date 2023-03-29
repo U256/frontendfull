@@ -7,6 +7,7 @@ module.exports = {
 	},
 	ignorePatterns: ['.next'],
 	extends: [
+		'airbnb',
 		'plugin:react/recommended',
 		'next/core-web-vitals',
 		'@frontendfull/eslint-config-shared',
