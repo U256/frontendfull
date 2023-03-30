@@ -15,11 +15,13 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - name: Cache deps
         uses: actions/cache@v3
+        id: node_modules
         with:
-          path: ~/.npm
-          key: node-modules-${{ hashFiles('**/package-lock.json') }}
+          path: |
+            **/node_modules
+          key: ${{ runner.os }}}-node_modules-${{ hashFiles('**/yarn.lock') }}
       - name: Install modules
-        run: yarn --immutable
+        run: yarn install --immutable
       - name: Build
         run: yarn build
       - name: Lint
