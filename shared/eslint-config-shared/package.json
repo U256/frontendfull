@@ -3,7 +3,7 @@
 	"description": "Shared ESLint configuration",
 	"version": "0.1.0",
 	"private": true,
-	"license": "ISC",
+	"license": "MIT",
 	"main": "index.js",
 	"peerDependencies": {
 		"eslint": "^8.35.0",

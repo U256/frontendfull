@@ -3,7 +3,7 @@
 	"description": "Shared Stylelint configuration",
 	"version": "0.1.0",
 	"private": true,
-	"license": "ISC",
+	"license": "MIT",
 	"main": "index.js",
 	"peerDependencies": {
 		"postcss": "^8.4.21",
