@@ -19,7 +19,7 @@ jobs:
           path: ~/.npm
           key: node-modules-${{ hashFiles('**/package-lock.json') }}
       - name: Install modules
-        run: yarn --frozen-lockfile
+        run: yarn --immutable
       - name: Build
         run: yarn build
       - name: Lint
