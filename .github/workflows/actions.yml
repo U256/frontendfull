@@ -18,7 +18,6 @@ jobs:
         with:
           path: |
             node_modules
-            **/node_modules
           key: node_modules-${{ runner.os }}-${{ hashFiles('**/yarn.lock') }}
       - name: Install modules
         run: yarn --immutable-cache
