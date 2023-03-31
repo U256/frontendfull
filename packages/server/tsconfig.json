@@ -1,20 +1,27 @@
 {
 	"compilerOptions": {
 		"target": "es6",
-		"lib": ["es2021"],
+		"lib": ["esnext"],
 		"allowJs": true,
 		"skipLibCheck": true,
 		"strict": true,
+		"outDir": "dist/",
 		"forceConsistentCasingInFileNames": true,
 		"noEmit": true,
 		"esModuleInterop": true,
+		"allowSyntheticDefaultImports": true,
 		"module": "esnext",
-		"moduleResolution": "nodenext",
+		"moduleResolution": "node",
 		"resolveJsonModule": true,
 		"isolatedModules": true,
 		"incremental": true,
-		"baseUrl": "./"
+		"baseUrl": "./",
+		"paths": {
+			"@/resources/*": ["resources/*"],
+			"@/utils/*": ["utils/*"],
+			"@/middleware/*": ["middleware/*"]
+		}
 	},
-	"include": ["**/*.ts", "**/*.js"],
+	"include": ["**/*.ts"],
 	"exclude": ["node_modules"]
 }
