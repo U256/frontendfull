@@ -4,8 +4,8 @@ import compression from 'compression'
 import cors from 'cors'
 import morgan from 'morgan'
 import helmet from 'helmet'
-import { Controller } from '@/util/interface/controller.interface'
-import { errorMiddleware } from '@/middleware/error.middleware'
+import { Controller } from 'util/interface/controller.interface'
+import { errorMiddleware } from 'middleware/error.middleware'
 
 export class App {
 	public express: Application

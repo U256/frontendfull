@@ -1,6 +1,6 @@
 import 'dotenv/config'
 import 'module-alias/register'
-import { validateEnv } from '@/util/validateEnv'
+import { validateEnv } from 'util/validateEnv'
 import { App } from './app'
 
 validateEnv()

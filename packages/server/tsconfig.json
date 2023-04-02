@@ -15,13 +15,8 @@
 		"resolveJsonModule": true,
 		"isolatedModules": true,
 		"incremental": true,
-		"baseUrl": "src",
-		"paths": {
-			"@/resource/*": ["resource/*"],
-			"@/util/*": ["util/*"],
-			"@/middleware/*": ["middleware/*"]
-		}
+		"baseUrl": "./src"
 	},
 	"include": ["src/**/*.ts"],
-	"exclude": ["**/node_modules/*", ".prettierrc.js", ".eslintrc.js"]
+	"exclude": ["**/node_modules/*", ".prettierrc.cjs", ".eslintrc.cjs"]
 }

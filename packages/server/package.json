@@ -3,11 +3,12 @@
 	"version": "0.1.0",
 	"private": true,
 	"license": "MIT",
+	"type": "module",
 	"scripts": {
 		"build": "tsc",
 		"dev": "tsc-watch --onSuccess \"node ./dist/app.js\"",
 		"start": "node dist/app.js",
-		"lint-es": "eslint --fix ./",
+		"lint-es": "eslint --fix src/",
 		"prettify": "prettier --write .",
 		"lint": "yarn prettify && yarn lint-es"
 	},
@@ -43,10 +44,5 @@
 		"eslint-plugin-unused-imports": "^2.0.0",
 		"prettier": "^2.8.4",
 		"typescript": "^5.0.3"
-	},
-	"_moduleAliases": {
-		"@/resource": "dist/resource",
-		"@/util": "dist/util",
-		"@/middleware": "dist/middleware"
 	}
 }
