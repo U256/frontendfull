@@ -74,6 +74,8 @@ module.exports = {
 				'@typescript-eslint/indent': 0,
 				'@typescript-eslint/naming-convention': 'warn',
 				'@typescript-eslint/no-unused-vars': 'off',
+				'@typescript-eslint/no-unsafe-member-access': 0,
+				'@typescript-eslint/no-unsafe-call': 0,
 			},
 		},
 	],

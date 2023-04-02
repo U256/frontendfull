@@ -45,12 +45,12 @@ export class App {
 	}
 
 	private initialiseDatabaseConnection = () => {
-		const { MONGO_USR, MONGO_PWD, MONGO_PATH } = process.env
+		const { MONGO_USR, MONGO_PWD, MONGO_PATH } = process.env as Record<string, string | number>
 
-		// избавься от этих уебанских правил
-
-		// eslint-disable-next-line @typescript-eslint/no-unsafe-member-access, @typescript-eslint/no-unsafe-call, @typescript-eslint/restrict-template-expressions, @typescript-eslint/no-floating-promises
-		mongoose.connect(`mongodb+srv://${MONGO_USR}:${MONGO_PWD}${MONGO_PATH}`)
+		mongoose.connect(`mongodb+srv://${MONGO_USR}:${MONGO_PWD}${MONGO_PATH}`).catch((e) => {
+			// eslint-disable-next-line no-console
+			console.log(e)
+		})
 	}
 
 	private intiializeErrorHandling = () => {
@@ -67,6 +67,5 @@ export class App {
 // })
 
 // app.listen(port, () => {
-// 	// eslint-disable-next-line no-console
 // 	console.log(`Example app listening on port ${port}`)
 // })
