@@ -1,7 +1,5 @@
 **/node_modules
 **/.git
-**/.next
-.build
-.dist
-**/dist
+dist
+README.md
 **/*.lock
