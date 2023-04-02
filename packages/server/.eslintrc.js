@@ -4,6 +4,7 @@ const config = {
 		node: true,
 		es2021: true,
 	},
+	ignorePatterns: ['dist'],
 	extends: ['@frontendfull/eslint-config-shared'],
 	parserOptions: {
 		ecmaVersion: 2021,
@@ -14,6 +15,7 @@ const config = {
 	},
 	plugins: [],
 	rules: {
+		'import/extensions': 0,
 		'react/jsx-filename-extension': 0,
 	},
 }

@@ -1,27 +1,27 @@
 {
 	"compilerOptions": {
-		"target": "es6",
+		"target": "ES2017",
 		"lib": ["esnext"],
 		"allowJs": true,
 		"skipLibCheck": true,
 		"strict": true,
-		"outDir": "dist/",
+		"outDir": "dist",
 		"forceConsistentCasingInFileNames": true,
-		"noEmit": true,
 		"esModuleInterop": true,
 		"allowSyntheticDefaultImports": true,
+		"sourceMap": true,
 		"module": "esnext",
 		"moduleResolution": "node",
 		"resolveJsonModule": true,
 		"isolatedModules": true,
 		"incremental": true,
-		"baseUrl": "./",
+		"baseUrl": "src",
 		"paths": {
-			"@/resources/*": ["resources/*"],
-			"@/utils/*": ["utils/*"],
+			"@/resource/*": ["resource/*"],
+			"@/util/*": ["util/*"],
 			"@/middleware/*": ["middleware/*"]
 		}
 	},
-	"include": ["**/*.ts"],
-	"exclude": ["node_modules"]
+	"include": ["src/**/*.ts"],
+	"exclude": ["**/node_modules/*", ".prettierrc.js", ".eslintrc.js"]
 }
