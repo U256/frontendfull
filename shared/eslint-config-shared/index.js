@@ -64,8 +64,7 @@ module.exports = {
 				'plugin:import/recommended',
 				'plugin:import/typescript',
 				'plugin:@typescript-eslint/recommended',
-				'plugin:@typescript-eslint/recommended-requiring-type-checking', // just to try
-				'plugin:@typescript-eslint/strict', // just to try
+				'plugin:@typescript-eslint/strict',
 				'airbnb-typescript',
 				'prettier',
 			],
@@ -74,8 +73,6 @@ module.exports = {
 				'@typescript-eslint/indent': 0,
 				'@typescript-eslint/naming-convention': 'warn',
 				'@typescript-eslint/no-unused-vars': 'off',
-				'@typescript-eslint/no-unsafe-member-access': 0,
-				'@typescript-eslint/no-unsafe-call': 0,
 			},
 		},
 	],

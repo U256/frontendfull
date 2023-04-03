@@ -5,7 +5,7 @@ import cors from 'cors'
 import morgan from 'morgan'
 import helmet from 'helmet'
 import { Controller } from 'util/interface/controller.interface'
-import { errorMiddleware } from 'middleware/error.middleware'
+import { errorMiddleware } from 'middleware/errorMiddleware'
 
 export class App {
 	public express: Application

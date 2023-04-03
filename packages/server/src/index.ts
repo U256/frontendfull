@@ -1,9 +1,10 @@
 import 'dotenv/config'
-import 'module-alias/register'
 import { validateEnv } from 'util/validateEnv'
+import { PostController } from 'resource/post/post.controller'
 import { App } from './app'
 
 validateEnv()
 
-const app = new App([], Number(process.env.PORT))
+const app = new App([new PostController()], Number(process.env.PORT))
+
 app.listen()
