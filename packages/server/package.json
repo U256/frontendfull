@@ -3,6 +3,7 @@
 	"version": "0.1.0",
 	"private": true,
 	"license": "MIT",
+	"type": "module",
 	"scripts": {
 		"build": "tsc",
 		"dev": "tsc-watch --onSuccess \"node ./dist/index.js\"",

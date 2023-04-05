@@ -15,7 +15,7 @@ const config = {
 	},
 	plugins: [],
 	rules: {
-		'import/extensions': 0,
+		'import/extensions': ['error', { js: 'always', ts: 'always' }],
 		'react/jsx-filename-extension': 0,
 	},
 }

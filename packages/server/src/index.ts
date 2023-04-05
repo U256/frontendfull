@@ -1,7 +1,7 @@
-import 'dotenv/config'
-import { validateEnv } from './utils/validateEnv'
-import { PostController } from './resources/post/post.controller'
-import { App } from './app'
+import 'dotenv/config.js'
+import { validateEnv } from './utils/validateEnv.js'
+import { PostController } from './resources/post/post.controller.js'
+import { App } from './app.js'
 
 validateEnv()
 
