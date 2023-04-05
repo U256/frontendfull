@@ -1,4 +1,4 @@
-import { Schema, model, Document } from 'mongoose'
+// import { Schema, model, Document } from 'mon goose'
 
 export interface Post extends Document {
 	title: string
