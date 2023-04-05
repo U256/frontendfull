@@ -1,9 +1,9 @@
 import { Router, Request, Response, NextFunction } from 'express'
-import { Controller } from 'util/interface/controller.interface'
-import { HttpException } from 'util/exception/http.exception'
-import { valudationMiddleware } from 'middleware/validationMiddleware'
-import { create as validationCreate } from './post.validation'
-import { PostService } from './post.service'
+import { valudationMiddleware } from '../../middleware/validationMiddleware.js'
+import { Controller } from '../../utils/interface/controller.interface.js'
+import { HttpException } from '../../utils/exception/http.exception.js'
+import { create as validationCreate } from './post.validation.js'
+import { PostService } from './post.service.js'
 
 export class PostController implements Controller {
 	public path = '/posts'
