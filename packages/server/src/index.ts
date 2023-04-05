@@ -1,6 +1,6 @@
 import 'dotenv/config'
-import { validateEnv } from 'util/validateEnv'
-import { PostController } from 'resource/post/post.controller'
+import { validateEnv } from './utils/validateEnv'
+import { PostController } from './resources/post/post.controller'
 import { App } from './app'
 
 validateEnv()

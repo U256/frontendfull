@@ -1,5 +1,5 @@
 import { Request, Response } from 'express'
-import { HttpException } from 'util/exception/http.exception'
+import { HttpException } from '../utils/exception/http.exception'
 
 export const errorMiddleware = (error: HttpException, req: Request, res: Response) => {
 	const status = error.status || 500

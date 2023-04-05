@@ -1,5 +1,4 @@
-import { PostModel } from './post.model'
-import { Post } from './post.interface'
+import { Post, PostModel } from './post.model'
 
 export class PostService {
 	private postmodel = PostModel
