@@ -12,7 +12,7 @@
 		"clear": "npm exec --workspaces -- npx rimraf node_modules && npx rimraf node_modules",
 		"setup-vscode": "mkdir ./.vscode && touch ./.vscode/settings.json && cp ./base-vscode-settings.json ./.vscode/settings.json",
 		"build": "yarn workspaces foreach -p run build",
-		"lint": "yarn workspaces foreach run lint",
+		"lint": "yarn workspaces foreach run lint && yarn editorconfig-checker",
 		"clean": "rm -fr node_modules /**/node_modules && yarn run clean:dist",
 		"dev-server": "yarn --cwd shared/server dev",
 		"dev-client": "yarn --cwd packages/$CLIENT dev",
@@ -25,6 +25,7 @@
 	},
 	"devDependencies": {
 		"concurrently": "^7.6.0",
+		"editorconfig-checker": "^5.0.1",
 		"typescript": "^5.0.3"
 	},
 	"packageManager": "yarn@3.5.0"
