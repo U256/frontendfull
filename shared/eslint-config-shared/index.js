@@ -29,7 +29,7 @@ module.exports = {
 		],
 		'import/prefer-default-export': 0,
 		'prettier/prettier': ['error'],
-
+		'complexity': ['error', 6],
 		// unused imports autoremove:
 		'no-unused-vars': 'off',
 		'unused-imports/no-unused-imports': 'warn',
