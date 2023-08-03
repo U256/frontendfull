@@ -1,10 +1,10 @@
+import { Controller } from 'util/interface/controller.interface'
 import express, { Application } from 'express'
 import mongoose from 'mongoose'
 import compression from 'compression'
 import cors from 'cors'
 import morgan from 'morgan'
 import helmet from 'helmet'
-import { Controller } from 'util/interface/controller.interface'
 import { errorMiddleware } from 'middleware/errorMiddleware'
 
 export class App {

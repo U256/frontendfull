@@ -6,6 +6,6 @@
 	"license": "MIT",
 	"main": "index.js",
 	"peerDependencies": {
-		"prettier": "^2.8.4"
+		"prettier": "^3.0.1"
 	}
 }

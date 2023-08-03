@@ -12,7 +12,7 @@ const PostSchema = new Schema<Post>(
 			required: true,
 		},
 	},
-	{ timestamps: true }
+	{ timestamps: true },
 )
 
 export const PostModel = m<Post>('Post', PostSchema)

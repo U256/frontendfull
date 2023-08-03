@@ -1,6 +1,6 @@
-import { Router, Request, Response, NextFunction } from 'express'
 import { Controller } from 'util/interface/controller.interface'
 import { HttpException } from 'util/exception/http.exception'
+import { Router, Request, Response, NextFunction } from 'express'
 import { valudationMiddleware } from 'middleware/validationMiddleware'
 import { create as validationCreate } from './post.validation'
 import { PostService } from './post.service'
