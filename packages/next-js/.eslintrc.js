@@ -9,7 +9,7 @@ module.exports = {
 	extends: [
 		'airbnb',
 		'plugin:react/recommended',
-		'next/core-web-vitals',
+		// 'next/core-web-vitals', // disabled because it confilcts with import and react-hooks plugins
 		'@frontendfull/eslint-config-shared',
 	],
 	plugins: ['react', 'react-hooks', 'jsx-a11y', 'prettier', 'unused-imports'],
@@ -24,6 +24,7 @@ module.exports = {
 	rules: {
 		'react/react-in-jsx-scope': 0,
 		'react/function-component-definition': 0,
+		'react/require-default-props': 0,
 		'react/jsx-indent-props': [2, 'tab'],
 		'react/jsx-indent': 0,
 		'react/jsx-key': 'error',
@@ -69,14 +70,7 @@ module.exports = {
 				'airbnb-typescript',
 				'prettier',
 			],
-			plugins: [
-				'@typescript-eslint',
-				'react',
-				'react-hooks',
-				'jsx-a11y',
-				'prettier',
-				'unused-imports',
-			],
+			plugins: ['@typescript-eslint', 'react', 'react-hooks', 'jsx-a11y', 'prettier', 'unused-imports'],
 			rules: {
 				'@typescript-eslint/indent': 0,
 				'@typescript-eslint/naming-convention': 'warn',
