@@ -9,7 +9,7 @@ module.exports = {
 	extends: [
 		'airbnb',
 		'plugin:react/recommended',
-		'next/core-web-vitals',
+		// 'next/core-web-vitals', // disabled because it confilcts with import and react-hooks plugins
 		'@frontendfull/eslint-config-shared',
 	],
 	plugins: ['react', 'react-hooks', 'jsx-a11y', 'prettier', 'unused-imports'],
