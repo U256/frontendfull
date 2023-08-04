@@ -143,11 +143,7 @@
 /* Inner Square */
 .thirteen::after {
 	padding: 1px;
-	background: linear-gradient(
-		to bottom right,
-		rgb(var(--tile-start-rgb) 1),
-		rgb(var(--tile-end-rgb) 1)
-	);
+	background: linear-gradient(to bottom right, rgb(var(--tile-start-rgb) 1), rgb(var(--tile-end-rgb) 1));
 	background-clip: content-box;
 	border-radius: var(--border-radius);
 	inset: 0;
@@ -176,7 +172,7 @@
 }
 
 /* Mobile and Tablet */
-@media (max-width: 1023px) {
+@media (width <= 1023px) {
 	.content {
 		padding: 4rem;
 	}
@@ -224,11 +220,7 @@
 	.description p {
 		align-items: center;
 		padding: 2rem 1rem 1.4rem;
-		background: linear-gradient(
-			to bottom,
-			rgb(var(--background-start-rgb) 1),
-			rgb(var(--callout-rgb) 0.5)
-		);
+		background: linear-gradient(to bottom, rgb(var(--background-start-rgb) 1), rgb(var(--callout-rgb) 0.5));
 		background-clip: padding-box;
 		border: none;
 		border-bottom: 1px solid rgb(var(--callout-border-rgb) 0.25);
@@ -249,7 +241,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-	.vercelLogo {
+	.vercel-logo {
 		filter: invert(1);
 	}
 

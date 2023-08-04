@@ -15,7 +15,10 @@ module.exports = {
 	rules: {
 		'arrow-body-style': 0,
 		'object-curly-newline': 0,
-		'max-len': 'error',
+		'max-len': [
+			'error',
+			{ code: 140, ignoreUrls: true, ignoreTemplateLiterals: true },
+		],
 		'linebreak-style': ['error', 'unix'],
 		'no-underscore-dangle': 0,
 		'class-methods-use-this': 0,
@@ -29,7 +32,7 @@ module.exports = {
 		],
 		'import/prefer-default-export': 0,
 		'prettier/prettier': ['error'],
-		'complexity': ['error', 6],
+		complexity: ['error', 6],
 		// unused imports autoremove:
 		'no-unused-vars': 'off',
 		'unused-imports/no-unused-imports': 'warn',

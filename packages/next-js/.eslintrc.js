@@ -70,14 +70,7 @@ module.exports = {
 				'airbnb-typescript',
 				'prettier',
 			],
-			plugins: [
-				'@typescript-eslint',
-				'react',
-				'react-hooks',
-				'jsx-a11y',
-				'prettier',
-				'unused-imports',
-			],
+			plugins: ['@typescript-eslint', 'react', 'react-hooks', 'jsx-a11y', 'prettier', 'unused-imports'],
 			rules: {
 				'@typescript-eslint/indent': 0,
 				'@typescript-eslint/naming-convention': 'warn',
