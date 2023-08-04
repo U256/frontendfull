@@ -1,7 +1,8 @@
-import { Inter } from 'next/font/google'
 import clsx from 'clsx'
-import styles from 'app/page.module.css'
+import { Inter } from 'next/font/google'
 import { Lorem } from 'components/Lorem'
+// import { ClientComponentTest } from 'components/ClientComponentTest'
+import styles from './page.module.css'
 
 // html {
 // 	font-size: 62.5%;
@@ -15,9 +16,8 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
 	return (
 		<main className={clsx(styles.main, inter.className)}>
-			<p>test</p>
 			<Lorem />
-			<br />
+			{/* <ClientComponentTest /> */}
 		</main>
 	)
 }
