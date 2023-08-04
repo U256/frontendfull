@@ -372,6 +372,7 @@ __metadata:
     "@types/react-dom": ^18.2.7
     "@typescript-eslint/eslint-plugin": ^6.2.1
     "@typescript-eslint/parser": ^6.2.1
+    clsx: ^2.0.0
     eslint: ^8.46.0
     eslint-config-airbnb: ^19.0.4
     eslint-config-airbnb-typescript: ^17.1.0
@@ -1891,6 +1892,13 @@ __metadata:
     is-regexp: ^1.0.0
     is-supported-regexp-flag: ^1.0.0
   checksum: 3b342e5d9d95dcfa9e53e6487d7d7e69d8f9beb27032e4866446333796c1d4a963bdb08586c21478be0bbaaee4b91ff4915d03f0709ac1b26487f707e1d71043
+  languageName: node
+  linkType: hard
+
+"clsx@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "clsx@npm:2.0.0"
+  checksum: a2cfb2351b254611acf92faa0daf15220f4cd648bdf96ce369d729813b85336993871a4bf6978ddea2b81b5a130478339c20d9d0b5c6fc287e5147f0c059276e
   languageName: node
   linkType: hard
 

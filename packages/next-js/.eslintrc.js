@@ -24,6 +24,7 @@ module.exports = {
 	rules: {
 		'react/react-in-jsx-scope': 0,
 		'react/function-component-definition': 0,
+		'react/require-default-props': 0,
 		'react/jsx-indent-props': [2, 'tab'],
 		'react/jsx-indent': 0,
 		'react/jsx-key': 'error',
