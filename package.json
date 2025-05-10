@@ -20,7 +20,7 @@
 		"start-next": "conc \"yarn server\" \"yarn next-js\" --kill-others-on-fail --restart-tries 1"
 	},
 	"engines": {
-		"node": "^19.7.0",
+		"node": "^22.15.0",
 		"yarn": "^3.5.0"
 	},
 	"devDependencies": {
@@ -28,5 +28,5 @@
 		"editorconfig-checker": "^5.1.1",
 		"typescript": "^5.1.6"
 	},
-	"packageManager": "yarn@3.5.0"
+	"packageManager": "yarn@3.8.7"
 }
